@@ -5,13 +5,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
-  <artifactId>workshop-javafx-jdbc</artifactId>
+  <artifactId>demo</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <name>workshop-javafx-jdbc</name>
+  <name>demo</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-<junit.version>5.10.0</junit.version>  </properties>
+    <junit.version>5.10.0</junit.version>
+  </properties>
 
   <dependencies>
     <dependency>
@@ -24,7 +25,7 @@
       <artifactId>javafx-fxml</artifactId>
       <version>21</version>
     </dependency>
-<dependency>
+    <dependency>
       <groupId>com.dlsc.formsfx</groupId>
       <artifactId>formsfx-core</artifactId>
       <version>11.6.0</version>
@@ -35,7 +36,7 @@
         </exclusion>
       </exclusions>
     </dependency>
-<dependency>
+    <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
       <version>${junit.version}</version>
@@ -47,13 +48,6 @@
       <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
-
-    <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>8.0.33</version>
-    </dependency>
-
   </dependencies>
 
   <build>
@@ -76,7 +70,7 @@
             <!-- Default configuration for running with: mvn clean javafx:run -->
             <id>default-cli</id>
             <configuration>
-              <mainClass>org.example.workshopjavafxjdbc/org.example.workshopjavafxjdbc.HelloApplication</mainClass>
+              <mainClass>org.example.demo/org.example.demo.HelloApplication</mainClass>
               <launcher>app</launcher>
               <jlinkZipName>app</jlinkZipName>
               <jlinkImageName>app</jlinkImageName>
